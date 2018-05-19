@@ -4,6 +4,7 @@ import {BrowserRouter, Route, Switch, NavLink, Link} from 'react-router-dom';
 const Home = () => (<div> Home Component </div>);
 const About = () => (<div> About Component </div>);
 const Contact = () => (<div> Contact Component </div>);
+const Error = () => (<div> Error: Page not found !!!! </div>);
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
             <Route path='/' component={Home} exact={true}/>
             <Route path='/about' component={About}/>
             <Route path='/contact' component={Contact}/>
+            <Route component={Error}/>
          </Switch>
         </div>
     
